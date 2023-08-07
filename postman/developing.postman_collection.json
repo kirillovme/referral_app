@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "9d0810e2-f75b-4cba-ab64-6b931a4493bb",
+		"name": "developing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28692461",
+		"_collection_link": "https://interstellar-satellite-24006.postman.co/workspace/referrals~8883cd68-1e51-4e9a-812b-fb7561a7944b/collection/28692461-9d0810e2-f75b-4cba-ab64-6b931a4493bb?action=share&creator=28692461&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "request code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone_number",
+							"value": "79100931707",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{LOCAL_URL}}/referral/request_code/",
+					"host": [
+						"{{LOCAL_URL}}"
+					],
+					"path": [
+						"referral",
+						"request_code",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verify code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "code",
+							"value": "3905",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{LOCAL_URL}}/referral/verify_code/",
+					"host": [
+						"{{LOCAL_URL}}"
+					],
+					"path": [
+						"referral",
+						"verify_code",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "request profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{LOCAL_URL}}/referral/profile/",
+					"host": [
+						"{{LOCAL_URL}}"
+					],
+					"path": [
+						"referral",
+						"profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "activate code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "invite_code",
+							"value": "F4KJ94",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{LOCAL_URL}}/referral/activate_code/",
+					"host": [
+						"{{LOCAL_URL}}"
+					],
+					"path": [
+						"referral",
+						"activate_code",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
