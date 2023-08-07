@@ -42,6 +42,8 @@ Success Response: Updated user profile data
 
 docker-compose up -d
 
+postman collection and environment in folder postman
+
 
 ## Considerations
 
